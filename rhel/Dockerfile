@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhel7
+FROM registry.access.redhat.com/rhel7
 
 MAINTAINER Kong
 
