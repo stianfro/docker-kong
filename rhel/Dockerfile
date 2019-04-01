@@ -14,7 +14,7 @@ LABEL name="Kong" \
 
 COPY LICENSE /licenses/
 
-RUN yum install -y openssl
+RUN yum install -y openssl-devel-1.0.1e-60 openssl-libs-1.0.1e-60 openssl-1.0.1e-60
 RUN yum install -y wget https://bintray.com/kong/kong-community-edition-rpm/download_file?file_path=rhel/7/kong-community-edition-$KONG_VERSION.rhel7.noarch.rpm && \
     yum clean all && \
     # OpenShift specific. OpenShift runs containers using an arbitrarily assigned user ID.
